@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            int[] A = [1,7,9];
+            int[] A = [1, 7, 9];
             int[] B = [2, 4, 8, 0, 0, 0];
 
             MergeArray(A, B);
@@ -18,21 +18,25 @@
 
             for (int i = B.Length - 1; i >= 0; i--)
             {
-                if (i != 0)
+                if (A[posA] > B[posB])
                 {
-                    if (A[posA] > B[posB])
-                    {
-                        B[i] = A[posA];
+                    if (i == 0)
+                        A[i] = B[posB];
+
+                    B[i] = A[posA];
+                    if(posA > 0)
                         posA--;
-
-                    }
-                    else
-                    {
-                        B[i] = B[posB];
-                        posB--;
-                    }
-
                 }
+                else
+                {
+                    if (i == 0)
+                        B[i] = A[posA];
+
+                    B[i] = B[posB];
+                    
+                    if (posB > 0)
+                        posB--;
+                }                     
                 
             }
 
