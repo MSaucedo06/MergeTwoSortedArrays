@@ -1,18 +1,18 @@
 # Merge Two Sorted Arrays
 
-## Descripci髇
+## Descripci贸n
 
 Dado dos arrays ordenados de enteros positivos:
 
 - Un array `A` de longitud `N`.
-- Un array `B` de longitud `2N`, en el que los primeros `N` elementos est醤 ocupados con n鷐eros y los 鷏timos `N` espacios est醤 vac韔s.
+- Un array `B` de longitud `2N`, en el que los primeros `N` elementos est谩n ocupados con n煤meros y los 煤ltimos `N` espacios est谩n vac铆os.
 
-La tarea es escribir una funci髇 que fusione el array `A` en el array `B`, manteniendo `B` ordenado.
+La tarea es escribir una funci贸n que fusione el array `A` en el array `B`, manteniendo `B` ordenado.
 
 ## Restricciones
 
-- **Tiempo**: La soluci髇 debe tener un tiempo de ejecuci髇 proporcional a `O(N)` o mejor.
-- **Espacio**: La soluci髇 debe usar un espacio proporcional a `O(1)`.
+- **Tiempo**: La soluci贸n debe tener un tiempo de ejecuci贸n proporcional a `O(N)` o mejor.
+- **Espacio**: La soluci贸n debe usar un espacio proporcional a `O(1)`.
 
 ## Ejemplo
 
@@ -22,6 +22,6 @@ A = [1, 7, 9]
 B = [2, 4, 8, , , ]
 
 
-### Entrada:
+### Resultado:
 
 B (after merge) = [1, 2, 4, 7, 8, 9]
